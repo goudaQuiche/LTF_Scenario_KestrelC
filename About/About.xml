@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>FTL Scenario - Kestrel C</name>
+	<author>Gouda quiche</author>
+	<url>https://github.com/goudaQuiche</url>
+	<supportedVersions>
+		<li>1.1</li>
+	</supportedVersions>
+	<packageId>goudaquiche.LtfKestrelCruiserC</packageId>
+	
+	<modDependencies>
+		<li>
+			<packageId>erdelf.HumanoidAlienRaces</packageId>
+			<displayName>Humanoid Alien Races 2.0</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=839005762</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>goudaquiche.LaniusRace</packageId>
+			<displayName>Lanius race</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1543164737</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>goudaquiche.clonebay</packageId>
+			<displayName>Clone bay</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1304432145</steamWorkshopUrl>
+		</li>
+		
+    </modDependencies>
+	
+	<description>Also called "The Swallow", that vessel crew is composed of 2 humans and 1 lanius.
+	
+This model was modified by pirates to utilize newly discovered technology. It can clone lost crewmembers and stun enemies. Unfortunately, It's crashed right now.
+
+In this scenario inspired by Faster than Light, you will start with :
+- 1 cloning bay (1 phenodrill, 1 clone vat, 3 meat grinders)
+- 1 chemfuel power generator, 2 batteries
+- 30 industrial components
+- 1 basic rifle, 1 revolver, 1 wooden spear
+- 1 cat
+
+In the surroundings are scattered :
+- 500 Chemfuel
+- 500 Steel
+
+You will start with electricity because your guys are not cavemen after all. They have been in space and hope to escape from this planet.
+</description>
+</ModMetaData>

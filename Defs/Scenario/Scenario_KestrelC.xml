@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ScenarioDef>
+		<defName>KestrelCScenario</defName>
+		<label>FTL Scenario - Kestrel C</label>
+		<description>This model was modified by pirates to utilize newly discovered technology. It can clone lost crewmembers and stun enemies.
+Unfortunately, it's crashed.</description>
+		<scenario>
+			<summary>Kestrel C starting Crew: 2 Humans, 1 Lanius.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>KestrelX_PlayerColony</factionDef>
+			</playerFaction>
+			<parts>
+
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>3</pawnCount>
+					<pawnChoiceCount>10</pawnChoiceCount>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>false</visible>
+				</li>
+
+				<!-- Player pawns modifiers -->
+				<li Class="ScenPart_ForcedHediff">
+					<def>ForcedHediff</def>
+					<visible>false</visible>
+					<context>PlayerStarter</context>
+					<chance>0.5</chance>
+					<hediff>Malnutrition</hediff>
+					<severityRange>
+						<min>0.2</min>
+						<max>0.4</max>
+					</severityRange>
+				</li>
+				<li Class="ScenPart_ForcedHediff">
+					<def>ForcedHediff</def>
+					<visible>false</visible>
+					<context>PlayerStarter</context>
+					<chance>0.5</chance>
+					<hediff>ToxicBuildup</hediff>
+					<severityRange>
+						<min>0.1</min>
+						<max>0.4</max>
+					</severityRange>
+				</li>
+
+				<li Class="ScenPart_SetNeedLevel">
+					<def>SetNeedLevel</def>
+					<visible>false</visible>
+					<context>PlayerStarter</context>
+					<chance>1.0</chance>
+					<need>Food</need>
+					<levelRange>
+						<min>0</min>
+						<max>0.1</max>
+					</levelRange>
+				</li>
+
+				<!-- Starting research -->
+
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Electricity</project>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>LTF_Phenodrill</thingDef>
+					<stuff>Plasteel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>LTF_CloneVat</thingDef>
+					<stuff>Plasteel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>LTF_MeatGrinder</thingDef>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ChemfuelPoweredGenerator</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Battery</thingDef>
+					<count>2</count>
+				</li>
+
+				<!-- Player starting things -->
+				<!-- Money -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>250</count>
+				</li>
+				<!-- Medicine -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>20</count>
+				</li>
+				<!-- ressources-->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>30</count>
+				</li>
+				<!-- Food -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Beer</thingDef>
+					<count>20</count>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSimple</thingDef>
+					<count>15</count>
+				</li>
+				<!-- Melee weapon-->
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Spear</thingDef>
+					<count>1</count>
+					<stuff>WoodLog</stuff>
+				</li>
+				<!-- Ranged weapon-->	
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_BoltActionRifle</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_Revolver</thingDef>
+				</li>
+
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>500</count>
+				</li>
+
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>ChunkSlagSteel</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Chemfuel</thingDef>
+					<count>500</count>
+				</li>
+
+
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>Cat</animalKind>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>.8</bondToRandomPlayerPawnChance>
+				</li>
+
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>The Kestrel C has a really good layout. Venting oxygen shouldn't be too much of a problem, especially if you preemtively open the outer side vents. If oxygen gets destroyed then the lanius can pretty easily go fix it if the humans are suffocating and dying.
+
+Dual lasers are a really good power efficient weapon, but selling the ion stunner pretty soon is prefered, for a better weapon, like more lasers or a flak 1. Having level 2 sensors is also good for getting crew kills later on with hacking and/or mind control strategies.
+
+Also don't forget to have the fourth crewmember you get manning doors instead of shields when jumping and in most situations. This goes for most ships. 
+
+That's what you thought until your ship got destroyed and you were forced into a quick landing on this planet.</text>
+					<closeSound>FtlMusic</closeSound>
+				</li>
+
+			</parts>
+		</scenario>
+
+	</ScenarioDef>
+</Defs>

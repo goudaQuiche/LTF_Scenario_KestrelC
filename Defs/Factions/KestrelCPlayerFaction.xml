@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef Abstract="True" Name="KestrelC_FactionBase">
+		<factionIconPath>WorldIcon/KestrelNpc</factionIconPath>
+		<colorSpectrum>
+			<!-- kestrel C violet -->
+			<li>(141,101,154)</li>
+		</colorSpectrum>
+	</FactionDef>
+
+	<FactionDef ParentName="KestrelC_FactionBase">
+		<defName>KestrelX_PlayerColony</defName>
+		<label>Kestrel C crew</label>
+		<description>Also called The Swallow</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Colonist</basicMemberKind>
+		<pawnsPlural>KC survivors</pawnsPlural>
+
+		<settlementNameMaker>NamerBaseLaniusVillage</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerFactionLaniusVillage</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionLaniusVillage</factionNameMaker>
+
+		<factionIconPath>WorldIcon/KestrelNpc</factionIconPath>
+		<settlementTexturePath>WorldIcon/KestrelNpcZoom</settlementTexturePath>
+
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outsider</li>
+					<li>Outlander</li>
+					<li>Offworld</li>
+					<li>LaniusBackstory</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+
+		<techLevel>Industrial</techLevel>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>		
+
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+				<li>Hyperweave</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>

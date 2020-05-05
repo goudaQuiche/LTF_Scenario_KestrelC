@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.RaceSettings>
+		<defName>KestrelC_Settings</defName>
+	
+		<pawnKindSettings>
+			<!-- colonists -->
+			<startingColonists>
+			<li>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<li>Lanius</li>
+						</kindDefs>
+						<chance>45</chance>
+					</li>
+					<li>
+						<kindDefs>
+							<li>LaniusColonist</li>
+						</kindDefs>
+						<chance>5.0</chance>
+					</li>
+					<li>
+						<kindDefs>
+							<li>Colonist</li>
+						</kindDefs>
+						<chance>50</chance>
+					</li>
+				</pawnKindEntries>
+					
+				<factionDefs>
+					<li>KestrelX_PlayerColony</li> 
+				</factionDefs>
+			</li>
+			</startingColonists>
+			
+			<!-- slave -->
+			<alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>LaniusSlave</li>
+					</kindDefs>
+					<chance>5.0</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>Slave</li>
+					</kindDefs>
+					<chance>5.0</chance>
+				</li>
+			</alienslavekinds>
+
+			<!-- refugee -->
+			<alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>LaniusRefugee</li>
+					</kindDefs>
+					<chance>4.0</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>LaniusSpaceRefugee</li>
+					</kindDefs>
+					<chance>5.0</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>LaniusSpaceSoldier</li>
+					</kindDefs>
+					<chance>1.0</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>LaniusRefugee</li>
+					</kindDefs>
+					<chance>4.0</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>LaniusSpaceRefugee</li>
+					</kindDefs>
+					<chance>5.0</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>Refugee</li>
+					</kindDefs>
+					<chance>5.0</chance>
+				</li>
+			</alienrefugeekinds>
+			
+			<!-- wanderer -->
+			<alienwandererkinds>
+			<li>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<li>LaniusWanderer</li>
+						</kindDefs>
+						<chance>4.0</chance>
+					</li>
+					
+					<li>
+						<kindDefs>
+							<li>LaniusAddicted</li>
+						</kindDefs>
+						<chance>1.0</chance>
+					</li>
+					<li>
+						<kindDefs>
+							<li>Wanderer</li>
+						</kindDefs>
+						<chance>4.0</chance>
+					</li>
+				</pawnKindEntries>
+				
+				<factionDefs>
+					<li>KestrelX_PlayerColony</li> 
+				</factionDefs>
+			</li>
+			</alienwandererkinds>
+			
+		</pawnKindSettings>
+		
+	</AlienRace.RaceSettings>
+</Defs>
