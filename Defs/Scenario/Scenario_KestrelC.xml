@@ -147,6 +147,10 @@ Unfortunately, it's crashed.</description>
 					<def>StartingThing_Defined</def>
 					<thingDef>Gun_Revolver</thingDef>
 				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Weapon_GrenadeEMP</thingDef>
+				</li>
 
 				<!-- Scatter some things near player start -->
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
