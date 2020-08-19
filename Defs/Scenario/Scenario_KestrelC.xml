@@ -7,11 +7,13 @@
 		<description>This model was modified by pirates to utilize newly discovered technology. It can clone lost crewmembers and stun enemies.
 Unfortunately, it's crashed.</description>
 		<scenario>
+		
 			<summary>Kestrel C starting Crew: 2 Humans, 1 Lanius.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>KestrelX_PlayerColony</factionDef>
 			</playerFaction>
+			
 			<parts>
 
 				<!-- Config pages -->
@@ -65,12 +67,15 @@ Unfortunately, it's crashed.</description>
 				</li>
 
 				<!-- Starting research -->
-
+				<!--
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
 					<project>Electricity</project>
 				</li>
+				-->
 
+				<!-- Player starting things -->				
+				<!-- Starting Buildings -->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>LTF_Phenodrill</thingDef>
@@ -98,8 +103,6 @@ Unfortunately, it's crashed.</description>
 					<thingDef>Battery</thingDef>
 					<count>2</count>
 				</li>
-
-				<!-- Player starting things -->
 				<!-- Money -->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
@@ -131,7 +134,6 @@ Unfortunately, it's crashed.</description>
 					<count>15</count>
 				</li>
 				<!-- Melee weapon-->
-
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>MeleeWeapon_Spear</thingDef>
@@ -169,6 +171,11 @@ Unfortunately, it's crashed.</description>
 					<thingDef>Chemfuel</thingDef>
 					<count>500</count>
 				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>3</count>
+				</li>
 
 
 				<li Class="ScenPart_StartingAnimal">
@@ -177,6 +184,10 @@ Unfortunately, it's crashed.</description>
 					<count>1</count>
 					<bondToRandomPlayerPawnChance>.8</bondToRandomPlayerPawnChance>
 				</li>
+
+				<!-- <li Class="ScenPart_CreateIncident"> -->
+					<!-- <def>ShipChunkDrop</def> -->
+				<!-- </li> -->
 
 				<!-- Game start dialog -->
 				<li Class="ScenPart_GameStartDialog">

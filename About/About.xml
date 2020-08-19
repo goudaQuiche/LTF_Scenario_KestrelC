@@ -5,9 +5,10 @@
 	<url>https://github.com/goudaQuiche</url>
 	<supportedVersions>
 		<li>1.1</li>
+		<li>1.2</li>
 	</supportedVersions>
 	<packageId>goudaquiche.LtfKestrelCruiserC</packageId>
-	
+
 	<modDependencies>
 		<li>
 			<packageId>erdelf.HumanoidAlienRaces</packageId>
@@ -24,11 +25,16 @@
 			<displayName>Clone bay</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1304432145</steamWorkshopUrl>
 		</li>
-		
-    </modDependencies>
-	
+	</modDependencies>
+
+	<loadAfter>
+		<li>erdelf.HumanoidAlienRaces</li>
+		<li>goudaquiche.LaniusRace</li>
+		<li>goudaquiche.clonebay</li>
+	</loadAfter>
+
 	<description>Also called "The Swallow", that vessel crew is composed of 2 humans and 1 lanius.
-	
+
 This model was modified by pirates to utilize newly discovered technology. It can clone lost crewmembers and stun enemies. Unfortunately, It's crashed right now.
 
 In this scenario inspired by Faster than Light, you will start with :
@@ -42,6 +48,6 @@ In the surroundings are scattered :
 - 500 Chemfuel
 - 500 Steel
 
-You will start with electricity because your guys are not cavemen after all. They have been in space and hope to escape from this planet.
-</description>
+You will start with no technology, but your guys used to be in a spaceship, they cant be dumb. They hope to escape this planet. Is there still time for them to traverse the sectors of space to reach the Federation Fleet, and warn them of the incoming rebel threat ? Surviving looks more essential for now.
+	</description>
 </ModMetaData>
