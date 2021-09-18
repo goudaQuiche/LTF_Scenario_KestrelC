@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<FactionDef Abstract="True" Name="KestrelC_FactionBase">
+	<FactionDef Abstract="True" Name="KestrelC_FactionBase" ParentName="FactionBase">
 		<factionIconPath>WorldIcon/KestrelNpc</factionIconPath>
 		<colorSpectrum>
 			<!-- kestrel C violet -->
@@ -38,11 +38,6 @@
 		<startingResearchTags>
 			<li>ClassicStart</li>
 		</startingResearchTags>		
-
-		<hairTags>
-			<li>Urban</li>
-			<li>Rural</li>
-		</hairTags>
 
 		<apparelStuffFilter>
 			<thingDefs>

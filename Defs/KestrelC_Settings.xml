@@ -60,13 +60,13 @@
 				</li>
 				<li>
 					<kindDefs>
-						<li>LaniusSpaceRefugee</li>
+						<li>LTF_Lanius_SpaceRefugee</li>
 					</kindDefs>
 					<chance>5.0</chance>
 				</li>
 				<li>
 					<kindDefs>
-						<li>LaniusSpaceSoldier</li>
+						<li>LTF_Lanius_SpaceSoldier</li>
 					</kindDefs>
 					<chance>1.0</chance>
 				</li>
@@ -75,12 +75,6 @@
 						<li>LaniusRefugee</li>
 					</kindDefs>
 					<chance>4.0</chance>
-				</li>
-				<li>
-					<kindDefs>
-						<li>LaniusSpaceRefugee</li>
-					</kindDefs>
-					<chance>5.0</chance>
 				</li>
 				<li>
 					<kindDefs>
@@ -109,7 +103,7 @@
 					</li>
 					<li>
 						<kindDefs>
-							<li>Wanderer</li>
+							<li>Villager</li>
 						</kindDefs>
 						<chance>4.0</chance>
 					</li>
